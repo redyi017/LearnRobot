@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.png
+!assets/**/*.png
+.obsidian/workspace*.json
+.obsidian/cache
+.DS_Store
