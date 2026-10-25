@@ -29,3 +29,9 @@ Corrections from our chats. They are reviewed every 2–3 weeks in an English re
 | 2026-10-12 | but start target on product view or real life usage view | but instead start from products and real-world use cases | *start from* + noun; *real-world* is the usual adjective |
 | 2026-10-12 | Surely, you can reject … | Of course, feel free to reject … | *surely* means "I'm confident that"; *of course* grants permission |
 | 2026-10-24 | Also note what is pending explicitly again | Also, please list again exactly what's still pending | *note* means "notice" or "write down for yourself"; to ask someone, use *please list* / *please spell out* |
+| 2026-10-25 | Please read another session | Please read my other session | *another* = some unspecified one; you meant a specific chat |
+| 2026-10-25 | Don't start the learning until we share understanding | Don't start the lessons until we're on the same page | *the learning* is unnatural as a noun phrase; idiom *on the same page* |
+| 2026-10-25 | I feel the guide is missing | I feel like there's no guide | *the guide* assumes one should exist; *no guide* says none was given |
+| 2026-10-25 | A program activated when I inputted the command | A program started when I ran the command | we *run* a command; *activated* sounds like a feature toggle |
+| 2026-10-25 | I have no idea and no knowledge about the contents | I don't understand the content yet | avoid saying the same thing twice; *content* is usually singular here |
+| 2026-10-25 | Don't directly tell me. You should prevent this from happening. | Don't just tell me. Make sure this doesn't happen again. | *just* = "only"; *prevent … from happening* means stopping it before it happens at all, *again* is about a repeat |

@@ -19,6 +19,20 @@ Owner: math + ML background, ~5 h/week, hardware budget US$200–500.
   Name the thinking lens in use: first principles, outside view (base rates), inversion, steelmanning, Fermi estimation.
 - **English review (every 2–3 weeks):** drill the recurring patterns in `english.md` with a quiz and rewrites.
 
+## Every lesson ships with a guide
+The owner must be able to do a lesson alone, without chat. A lesson is **not ready** until its folder has a `GUIDE.md` written for someone who has never seen the topic:
+1. **What and why**, in one plain paragraph: what you will do, and how it connects to the module's product.
+2. **New words** defined before they are used.
+3. **Numbered steps.** Each one gives the exact command, **what you should see** (a window, the expected numbers, a picture), and how to read it.
+4. **Exercises with hints only.** No answers or derivations in lesson files. Answers come in the review, after the owner has tried.
+5. **What to record** (a `my-results.md` worksheet in the lesson folder) and **how to report back**.
+6. **"If you're stuck"** and **"Done when"** sections.
+
+Before handing a lesson over, Claude runs every step itself and checks that the guide matches what really happens: outputs, file locations, timings. In chat, the handover is one line ("Start with `GUIDE.md`, step 1"), not a summary of the lesson.
+
+## When the owner is lost
+Treat confusion as a defect in the repo, not something to patch in chat. Fix the file that caused it. If it's a pattern, add a rule here. Log it in `PROGRESS.md`.
+
 ## Rules
 - Language: English. End every reply with **English notes**: at most 3 corrections of the owner's message, each with the reason. Log each one in `english.md`.
 - Keep the **Pending** section of `PROGRESS.md` explicit and current: split it into *waiting on owner* and *waiting on Claude*, and restate it at the end of every session.

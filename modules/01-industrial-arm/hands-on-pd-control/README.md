@@ -2,6 +2,8 @@
 
 Part of [[modules/01-industrial-arm/README|Module 1: Industrial arm]].
 
+> **To do this lesson, follow [[modules/01-industrial-arm/hands-on-pd-control/GUIDE|GUIDE]].** This README is background reading: the bigger picture behind the exercise.
+
 **Time:** ~5 h · **Goal:** a mental map of a robot system, and first contact with the physics you can't skip.
 
 ## 1. The stack (≈30 min)
@@ -53,7 +55,7 @@ Exercises (edit the constants at the top, re-run, look at the plot):
 1. **`KD = 0`.** What happens, and why? *(Hint: what removes energy from the system?)*
 2. **`KP = 500`.** Does it get better? Look at the torque plot. What would a real motor do?
 3. **`TORQUE_LIMIT = 2.0`.** Can it still reach 90°? Work out the torque gravity needs at 90° (m·g·l).
-4. **Default settings leave a ~5.6° steady-state error.** Derive it: at equilibrium Kp·e = m·g·l·sin(q), so e ≈ m·g·l / Kp = 4.9/50 rad ≈ 5.6°. Then set `GRAVITY_COMP = True` and check that the error vanishes. This is a *model-based* controller: you used knowledge of the physics.
+4. **Default settings leave a ~5.6° steady-state error.** Where does it come from? Derive it, then set `GRAVITY_COMP = True` and see what changes.
 5. **Stretch:** replace the PD controller with a tiny neural net and train it any way you like (random search, CMA-ES, a few lines of PPO) to swing the pendulum from hanging down (q=0) to *upright* (q=180°). Compare how much effort that takes with how easy the hand-written controller was. That trade-off between learned and engineered control is a theme of the whole course.
 
 ## 4. Watch / read (≈1 h, pick some)

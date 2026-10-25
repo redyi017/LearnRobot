@@ -5,6 +5,15 @@ Learning robotics with the goal of founding a robotics startup.
 **Profile:** math + ML background · ~5 h/week · hardware budget US$200–500
 **Working thesis:** AI is getting very good at bits; the open opportunity is AI that acts in the physical world.
 
+## Start here: how to learn with this repo
+
+1. Open [[PROGRESS]]. **Waiting on you** is your current task.
+2. Open that task's `GUIDE.md` and follow the steps in order. Every lesson has one.
+3. Write what you see and think in the lesson's `my-results.md`.
+4. Come back to Claude and say "done with …" or ask about anything unclear. Claude reviews your results, explains what you missed, and prepares the next part.
+
+You never need to read [[CLAUDE]]. It's Claude's instructions, not yours.
+
 ## How this repo works
 
 Open this folder as an **Obsidian vault**. Set up Python once with `uv sync`, then run any module code with `uv run python <script>`.

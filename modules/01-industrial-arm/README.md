@@ -15,7 +15,7 @@ status: hands-on ready · teardown not yet written
 *(Claude: to write: the stack of a fixed-program arm; what it does **not** have compared with [[01-what-is-a-robot|a tool-user]])*
 
 ## 4. Hands-on
-- **Part A, ready now:** [[modules/01-industrial-arm/hands-on-pd-control/README|PD control of a pendulum]]: how one joint of an arm is held in position.
+- **Part A, ready now:** PD control of a pendulum, i.e. how one joint of an arm is held in position. **Start with [[modules/01-industrial-arm/hands-on-pd-control/GUIDE|the guide]].**
 - **Part B, to write:** kinematics of a multi-joint arm (forward and inverse kinematics).
 
 ## 5. Limits

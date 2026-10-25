@@ -5,13 +5,10 @@ Run:
     uv run python modules/01-industrial-arm/hands-on-pd-control/pendulum_pd.py          # headless: prints, saves a plot
     uv run python modules/01-industrial-arm/hands-on-pd-control/pendulum_pd.py --view   # interactive 3D viewer
 
-Things to try (answers to think about are in README.md):
-    1. Set KD = 0. What happens? Why?
-    2. Set KP very large (e.g. 500). What happens to the torque? Is that realistic?
-    3. Set TORQUE_LIMIT = 2.0. Can the pendulum still reach the target? Why not?
-    4. Add gravity compensation: tau += m*g*l*sin(q). Does the steady-state error disappear?
+Start with GUIDE.md in this folder: it walks you through what to run and what to look for.
 """
 import sys
+from pathlib import Path
 import numpy as np
 import mujoco
 
@@ -68,6 +65,7 @@ def main():
         log_t.append(data.time); log_q.append(q); log_tau.append(data.ctrl[0])
 
     if "--view" in sys.argv:
+        print("Viewer open. It runs 30 simulated seconds, then closes and saves the plot.")
         import time
         from mujoco import viewer as mj_viewer
         with mj_viewer.launch_passive(model, data) as viewer:
@@ -92,8 +90,9 @@ def main():
         ax[0].plot(log_t, np.rad2deg(log_q)); ax[0].axhline(np.rad2deg(TARGET), ls="--", c="gray")
         ax[0].set_ylabel("angle [deg]")
         ax[1].plot(log_t, log_tau); ax[1].set_ylabel("torque [N*m]"); ax[1].set_xlabel("time [s]")
-        fig.tight_layout(); fig.savefig("pendulum_pd.png", dpi=120)
-        print("saved plot -> pendulum_pd.png")
+        out = Path(__file__).with_name("pendulum_pd.png")   # saved next to this script
+        fig.tight_layout(); fig.savefig(out, dpi=120)
+        print(f"saved plot -> {out}")
     except ImportError:
         print("(install matplotlib to get a plot)")
 
