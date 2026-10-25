@@ -13,8 +13,8 @@ import numpy as np
 import mujoco
 
 # --- The robot, described in MJCF (MuJoCo's XML format) -------------------
-# One hinge joint, a 0.5 m rod with a 1 kg mass on the end, and a motor.
-XML = """
+# One hinge joint, a 0.5 m rod with a ball (the "payload") on the end, and a motor.
+XML_TEMPLATE = """
 <mujoco>
   <option timestep="0.002" gravity="0 0 -9.81"/>
   <worldbody>
@@ -23,7 +23,7 @@ XML = """
     <body name="pole" pos="0 0 1.2">
       <joint name="hinge" type="hinge" axis="0 1 0" damping="0.05"/>
       <geom type="capsule" fromto="0 0 0 0 0 -0.5" size="0.02" mass="0.0"/>
-      <geom type="sphere" pos="0 0 -0.5" size="0.06" mass="1.0" rgba=".8 .2 .2 1"/>
+      <geom type="sphere" pos="0 0 -0.5" size="0.06" mass="{payload}" rgba=".8 .2 .2 1"/>
     </body>
   </worldbody>
   <actuator>
@@ -37,9 +37,12 @@ TARGET = np.deg2rad(90)   # target angle: pole horizontal
 KP = 50.0                 # proportional gain  [N*m / rad]
 KD = 5.0                  # derivative gain    [N*m / (rad/s)]
 TORQUE_LIMIT = 20.0       # real motors saturate! [N*m]
-GRAVITY_COMP = False      # exercise 4
+GRAVITY_COMP = False      # experiment 4
+PAYLOAD_MASS = 1.0        # experiment 5: the REAL mass of the ball [kg]
 SIM_SECONDS = 3.0
 
+# What the controller BELIEVES about the robot (used only by gravity compensation).
+# The robot was "programmed" for a 1 kg payload. Don't change these.
 M, G, L = 1.0, 9.81, 0.5
 
 
@@ -53,7 +56,7 @@ def controller(q, qdot):
 
 
 def main():
-    model = mujoco.MjModel.from_xml_string(XML)
+    model = mujoco.MjModel.from_xml_string(XML_TEMPLATE.format(payload=PAYLOAD_MASS))
     data = mujoco.MjData(model)
 
     log_t, log_q, log_tau = [], [], []

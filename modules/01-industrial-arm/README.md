@@ -19,7 +19,7 @@ status: hands-on ready · teardown not yet written
 - **Part B, to write:** kinematics of a multi-joint arm (forward and inverse kinematics).
 
 ## 5. Limits
-*(to discuss after Parts A and B)*
+*(first draft from your answers in Part A, Step 5; extended after Part B)*
 
 ## 6. Foresight → [[forecasts]]
 *(pending)*

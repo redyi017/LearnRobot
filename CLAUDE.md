@@ -20,13 +20,23 @@ Owner: math + ML background, ~5 h/week, hardware budget US$200–500.
 - **English review (every 2–3 weeks):** drill the recurring patterns in `english.md` with a quiz and rewrites.
 
 ## Every lesson ships with a guide
-The owner must be able to do a lesson alone, without chat. A lesson is **not ready** until its folder has a `GUIDE.md` written for someone who has never seen the topic:
-1. **What and why**, in one plain paragraph: what you will do, and how it connects to the module's product.
-2. **New words** defined before they are used.
-3. **Numbered steps.** Each one gives the exact command, **what you should see** (a window, the expected numbers, a picture), and how to read it.
-4. **Exercises with hints only.** No answers or derivations in lesson files. Answers come in the review, after the owner has tried.
-5. **What to record** (a `my-results.md` worksheet in the lesson folder) and **how to report back**.
-6. **"If you're stuck"** and **"Done when"** sections.
+The owner must be able to do a lesson alone, without chat. A lesson is **not ready** until its folder has a `GUIDE.md` written for someone who has never seen the topic. Template: `modules/01-industrial-arm/hands-on-pd-control/GUIDE.md`.
+
+**It must serve the learning design, not just teach the technology:**
+1. **Where this fits:** front matter naming the module, the teardown question it answers, and the questions it feeds. Then a short section with the **product question** the lesson tests, its link to the *tool → tool-user* thread in [[01-what-is-a-robot]], and what the owner will come away with.
+2. **At least one experiment where the product's assumptions break.** The technology has to show a product's limit, not only how it works.
+3. **Predict before running** every experiment (the same habit as `forecasts.md`).
+4. **Name the thinking lens** on exercises where one applies (first principles, outside view, inversion, steelmanning, Fermi estimation).
+5. **A "Back to the product" step** that turns the results into input for the module's teardown sections (limits, economics, how it works), plus a dated entry in `startup-ideas.md`.
+6. **Fits 5 h/week:** split into sittings of about 1.5 h, with times for each step.
+
+**And it must be usable alone:**
+7. **New words** defined before they are used.
+8. **Numbered steps.** Each one gives the exact command, **what you should see** (a window, the expected numbers, a picture), and how to read it.
+9. **Exercises with hints only.** No answers or derivations in lesson files. Answers come in the review, after the owner has tried.
+10. **What to record** (a `my-results.md` worksheet that mirrors the steps) and **how to report back**, including what happens next.
+11. **"If you're stuck"** and **"Done when"** sections.
+12. **One source of truth:** steps and exercises live only in `GUIDE.md`. Other lesson files are background reading, and the guide says when to read them.
 
 Before handing a lesson over, Claude runs every step itself and checks that the guide matches what really happens: outputs, file locations, timings. In chat, the handover is one line ("Start with `GUIDE.md`, step 1"), not a summary of the lesson.
 

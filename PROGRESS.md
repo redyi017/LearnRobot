@@ -4,7 +4,7 @@
 
 ### Waiting on you
 1. **Your first prediction** for Insight #1 → [[forecasts]]. One sentence: specific, dated, with a confidence %. (I see you started a row with "2036"; finish it there or send it in chat.)
-2. **Module 1, hands-on Part A:** follow [[modules/01-industrial-arm/hands-on-pd-control/GUIDE|the guide]] step by step, fill in [[modules/01-industrial-arm/hands-on-pd-control/my-results|my-results]], then tell Claude "Part A done".
+2. **Module 1, hands-on Part A:** follow [[modules/01-industrial-arm/hands-on-pd-control/GUIDE|the guide]] step by step, fill in [[modules/01-industrial-arm/hands-on-pd-control/my-results|my-results]], then tell Claude "Part A done". About 3 h, in two sittings.
 3. *(optional)* Reply to the three open tensions in [[01-what-is-a-robot]]: where intelligence lives, tool use vs. humanoids, intelligence relative to variability.
 
 ### Waiting on Claude
@@ -26,3 +26,4 @@
 - 2026-10-12: Owner proposed product-first learning; Claude proposed product teardowns with technology pulled in on demand.
 - 2026-10-24: Sequence approved. Curriculum rewritten as 7 product modules; the pendulum lesson moved into Module 1. Git initialised.
 - 2026-10-25: Owner ran the simulation but had no guide: no steps, no "what you should see", and an exercise answer printed in the README. Fix: a rule in `CLAUDE.md` that every lesson ships with a tested `GUIDE.md` plus a `my-results.md` worksheet; "Start here" added to `README.md`; Part A guide written and verified; plot now saved next to the script.
+- 2026-10-25: Guide realigned with the learning design: product question and tool→tool-user framing, a payload-change experiment (where the arm's assumptions break), thinking lenses, a "Back to the product" step feeding Limits/Economics and startup-ideas, two sittings. `CLAUDE.md` guide rule extended to match; README reduced to background so the guide is the one source of truth.
