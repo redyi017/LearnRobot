@@ -36,3 +36,4 @@ Corrections from our chats. They are reviewed every 2–3 weeks in an English re
 | 2026-10-25 | I have no idea and no knowledge about the contents | I don't understand the content yet | avoid saying the same thing twice; *content* is usually singular here |
 | 2026-10-25 | Don't directly tell me. You should prevent this from happening. | Don't just tell me. Make sure this doesn't happen again. | *just* = "only"; *prevent … from happening* means stopping it before it happens at all, *again* is about a repeat |
 | 2026-10-25 | Ensure the design of guide aligns with the learning design | Make sure the guide's design matches the learning design | *the guide* needs an article (recurring pattern); *the guide's design* is shorter; *make sure* is less formal than *ensure* |
+| 2026-10-26 | Let's proceed learning | Let's continue learning / Let's proceed with the lessons | *proceed* needs *with* + noun (or *to* + verb); *continue* is the natural verb here |
