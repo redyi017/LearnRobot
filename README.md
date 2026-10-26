@@ -22,7 +22,7 @@ Open this folder as an **Obsidian vault**. Set up Python once with `uv sync`, th
 - [[PROGRESS]]: where we are and what's next
 - `modules/NN-product/`: product modules (a teardown plus hands-on work)
 - `insights/`: first-principles insight sessions
-- [[forecasts]]: dated predictions, checked later for calibration
+- [[forecasts]]: dated predictions, checked later for calibration (from each module's Foresight question; optional in insight sessions)
 - [[startup-ideas]]: opportunities, theses and doubts
 - [[english]]: English corrections log
 - `notes/`: your own notes (Claude doesn't edit these)

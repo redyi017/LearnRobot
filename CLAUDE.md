@@ -15,7 +15,7 @@ Owner: math + ML background, ~5 h/week, hardware budget US$200–500.
 - **Module session:** a product module in `modules/NN-product/`. It follows the six teardown questions in `README.md` (job, economics, how it works, hands-on, limits, foresight). Technology is taught when the product needs it, not in textbook order. Research and cite product facts. For exercises, give hints and questions before answers.
 - **Insight session:** one fundamental question, discussed in a fixed order:
   1. question → 2. owner answers first → 3. Claude challenges with counterexamples →
-  4. joint synthesis note in `insights/` → 5. one dated prediction in `forecasts.md`.
+  4. joint synthesis note in `insights/` → 5. *(optional)* a dated prediction in `forecasts.md`, only when the session produces a naturally bettable claim. Don't force one out of a definition question.
   Name the thinking lens in use: first principles, outside view (base rates), inversion, steelmanning, Fermi estimation.
 - **English review (every 2–3 weeks):** drill the recurring patterns in `english.md` with a quiz and rewrites.
 
@@ -25,7 +25,7 @@ The owner must be able to do a lesson alone, without chat. A lesson is **not rea
 **It must serve the learning design, not just teach the technology:**
 1. **Where this fits:** front matter naming the module, the teardown question it answers, and the questions it feeds. Then a short section with the **product question** the lesson tests, its link to the *tool → tool-user* thread in [[01-what-is-a-robot]], and what the owner will come away with.
 2. **At least one experiment where the product's assumptions break.** The technology has to show a product's limit, not only how it works.
-3. **Predict before running** every experiment (the same habit as `forecasts.md`).
+3. **Predict before running** every experiment (the same habit as `forecasts.md`, on a small scale).
 4. **Name the thinking lens** on exercises where one applies (first principles, outside view, inversion, steelmanning, Fermi estimation).
 5. **A "Back to the product" step** that turns the results into input for the module's teardown sections (limits, economics, how it works), plus a dated entry in `startup-ideas.md`.
 6. **Fits 5 h/week:** split into sittings of about 1.5 h, with times for each step.

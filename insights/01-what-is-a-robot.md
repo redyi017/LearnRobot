@@ -55,8 +55,8 @@ Draft definition:
 - *Tool-use argues for humanoids.* If robots must use many different tools, and most existing tools are designed for human hands, that is the strongest argument for human-like hands, and possibly humanoids. That challenges the owner's earlier skepticism → [[startup-ideas]].
 - *Is "enough" intelligence relative?* A thermostat's intelligence fully matches its near-zero variability. Is the real measure intelligence *relative to the variability of the task*?
 
-## 6. Prediction → [[forecasts]]
-*(pending)*
+## 6. Prediction
+Skipped (2026-10-26): a definition question doesn't produce a natural bet. Predictions now come mainly from each module's Foresight question.
 
 ## Links
 [[startup-ideas]] · [[forecasts]] · [[english]]
